@@ -1,8 +1,6 @@
 # 🏛️ Sistema Cartório (.NET)
 
 <div align="center">
-
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge&logo=git&logoColor=white" alt="Status Em Desenvolvimento">
   <img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET Version">
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
 
