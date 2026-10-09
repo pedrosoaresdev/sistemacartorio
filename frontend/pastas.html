@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartório | Pastas documentais</title>
+  <script src="js/auth-guard.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="main">
+      <header id="topbar" class="header"></header>
+      <main class="content">
+        <div class="page-title">
+          <h2>Pastas documentais</h2>
+          <button id="btnNew" class="btn-primary btn-inline">+ Nova pasta</button>
+        </div>
+
+        <section class="panel">
+          <div class="filters">
+            <input id="search" type="search" placeholder="Nome, CPF ou protocolo..." />
+            <select id="statusFilter">
+              <option value="">Todos os status</option>
+              <option>Ativa</option>
+              <option>Arquivada</option>
+              <option>Encerrada</option>
+            </select>
+          </div>
+
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th>Protocolo</th><th>Nome</th><th>Categoria</th><th>Status</th><th>Criada em</th></tr>
+              </thead>
+              <tbody id="folderBody"><tr><td colspan="5">Carregando...</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <form id="folderForm" class="modal-box">
+      <h3>Nova pasta</h3>
+      <label>Nome completo *</label>
+      <input id="fName" required />
+      <label>CPF</label>
+      <input id="fCpf" inputmode="numeric" />
+      <label>Categoria</label>
+      <select id="fCategory">
+        <option>Geral</option><option>Registro Civil</option><option>Notas</option>
+        <option>Imóveis</option><option>Protesto</option>
+      </select>
+      <label>Observações</label>
+      <textarea id="fDesc" rows="3"></textarea>
+      <p id="formError" class="error"></p>
+      <div class="modal-actions">
+        <button type="button" id="btnCancel" class="btn-ghost">Cancelar</button>
+        <button type="submit" class="btn-primary btn-inline">Criar pasta</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pastas.js"></script>
+</body>
+</html>

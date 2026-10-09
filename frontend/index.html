@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartório | Acesso ao sistema</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="brand">
+      <div class="brand-logo">C</div>
+      <h1>Cartório Digital</h1>
+      <p>Acesso restrito a colaboradores autorizados</p>
+    </div>
+
+    <form id="loginForm" novalidate>
+      <label for="username">Usuário</label>
+      <input id="username" type="text" autocomplete="username" required />
+
+      <label for="password">Senha</label>
+      <div class="password-wrap">
+        <input id="password" type="password" autocomplete="current-password" required />
+        <button type="button" id="togglePassword" aria-label="Mostrar senha">Mostrar</button>
+      </div>
+
+      <p id="error" class="error" role="alert"></p>
+
+      <button type="submit" id="submitBtn" class="btn-primary">Entrar</button>
+    </form>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

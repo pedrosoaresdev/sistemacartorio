@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartório | Em construção</title>
+  <script src="js/auth-guard.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="main">
+      <header id="topbar" class="header"></header>
+      <main class="content">
+        <div class="page-title"><h2 id="title"></h2></div>
+        <section class="panel empty">
+          <p>🚧 Este módulo ainda será construído nas próximas fases.</p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script>
+    document.getElementById("title").textContent =
+      new URLSearchParams(location.search).get("p") || "Módulo";
+  </script>
+</body>
+</html>

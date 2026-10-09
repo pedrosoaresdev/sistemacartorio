@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartório | Dashboard</title>
+  <script src="js/auth-guard.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="main">
+      <header id="topbar" class="header"></header>
+      <main class="content">
+        <div class="page-title">
+          <h2>Dashboard</h2>
+          <a class="btn-primary btn-inline" href="pastas.html?novo=1">+ Nova pasta</a>
+        </div>
+
+        <section class="cards">
+          <div class="card"><span>Pastas documentais</span><strong id="cFolders">–</strong></div>
+          <div class="card"><span>Pastas ativas</span><strong id="cActive">–</strong></div>
+          <div class="card"><span>Documentos</span><strong id="cDocs">–</strong></div>
+          <div class="card admin-only" id="cardUsers" hidden><span>Usuários ativos</span><strong id="cUsers">–</strong></div>
+        </section>
+
+        <section class="panel">
+          <h3>Pastas criadas recentemente</h3>
+          <table class="table">
+            <thead><tr><th>Protocolo</th><th>Nome</th><th>Status</th><th>Criada em</th></tr></thead>
+            <tbody id="recentBody"><tr><td colspan="4">Carregando...</td></tr></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
