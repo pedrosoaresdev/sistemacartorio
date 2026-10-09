@@ -23,7 +23,7 @@ O sistema está atualmente em fase de construção e estruturação de rotinas. 
 
 ## 🚀 Sobre o Projeto
 
-Aplicação desenvolvida em **C# (.NET)** estruturada para simular o ecossistema de um cartório digital. O objetivo principal é proporcionar um aprendizado prático e avançado sobre arquitetura de software, persistência de dados baseada em arquivos, criptografia e controle de acesso baseado em tokens.
+Arquitetura de alta performance desenvolvida em **C# (.NET)**, concebida para sustentar o ecossistema complexo e seguro de um cartório digital. Como **Software Engineer**, concentro meus esforços no design arquitetural e no domínio de C#, implementando padrões avançados de engenharia de software, incluindo persistência de dados orientada a arquivos, algoritmos robustos de criptografia e controle de acesso state-of-the-art baseado em tokens.
 
 ---
 
