@@ -12,7 +12,7 @@
 
 O sistema está atualmente em fase de construção e estruturação de rotinas. Acompanhe o progresso geral do desenvolvimento:
 
-**Progresso Geral:** 57%
+**Progresso Geral:**
 `█████████████████████████░░░░░░░░░░` **57%**
 
 > ⚠️ **Aviso:** Este projeto encontra-se em **desenvolvimento ativo**. Funcionalidades, rotas e estruturas de banco de dados podem sofrer alterações frequentes até a versão final estável.
